@@ -1,144 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-ZA" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESET Pilates Studio - Services</title>
-    <link rel="stylesheet" href="css_assets/style.css">
+    <title>Services & Pricing | Mat, Reformer & Private Pilates | RESET</title>
+    <meta name="description" content="Browse RESET Pilates Studio classes and prices: Mat Pilates from R180, Reformer Pilates from R280 and Private Sessions from R550. Search our timetable.">
+    <meta name="keywords" content="Pilates prices Johannesburg, reformer Pilates classes, mat Pilates timetable, private Pilates session cost">
+    <meta name="author" content="Thato Mbewe">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; frame-ancestors 'self'; form-action 'self' mailto:">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="https://thatombewe733.github.io/WEDE5020_POE/services.html">
+    <link rel="icon" type="image/png" href="images/studiologo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RESET Pilates Studio">
+    <meta property="og:title" content="Services & Pricing | Mat, Reformer & Private Pilates | RESET">
+    <meta property="og:description" content="Browse RESET Pilates Studio classes and prices: Mat Pilates from R180, Reformer Pilates from R280 and Private Sessions from R550. Search our timetable.">
+    <meta property="og:url" content="https://thatombewe733.github.io/WEDE5020_POE/services.html">
+    <meta property="og:image" content="https://thatombewe733.github.io/WEDE5020_POE/images/herophoto.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;600&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
     <header class="site-header">
-        <img class="logo" src="images/studiologo.png" alt="Studio Logo">
-
-
-        <h1>RESET Pilates Studio</h1>
-        <p class="tagline">Breathe. Move. RESET.</p>
-
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="enquiries.html">Enquiries</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-
+        <div class="container header-inner">
+            <!-- Logo and studio name -->
+            <a class="brand" href="index.html" aria-label="RESET Pilates Studio home">
+                <img src="images/studiologo.png" alt="RESET Pilates Studio logo" width="56" height="56">
+                <span><strong>RESET Pilates Studio</strong><small>Breathe. Move. RESET.</small></span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav class="main-nav" id="site-nav" aria-label="Main navigation">
+                <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html" aria-current="page">Services</a></li><li><a href="enquiries.html">Enquiries</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main id="main">
+        <div class="page-title"><div class="container">
+            <h1>Pilates Classes &amp; Pricing</h1>
+            <p>Classes for every fitness level and goal.</p>
+        </div></div>
 
-        <section>
-            <h2>Our Classes</h2>
-
-            <p>
-                We offer different Pilates classes to suit different
-                fitness levels and goals.
-            </p>
-
-        </section>
-
-        <div class="services-grid">
-
-            <section>
-
-                <h3>Mat Pilates</h3>
-
-                <p>
-                    Mat Pilates uses bodyweight exercises to improve core
-                    strength, posture and flexibility.
-                </p>
-
+        <div class="container">
+            <section class="block reveal">
+                <h2>Our Classes</h2>
+                <p>We offer different Pilates classes to suit different fitness levels and goals.</p>
+                <div class="tabs">
+                    <div class="tab-list" role="tablist" aria-label="Class types">
+                        <button role="tab" id="tab-mat" aria-controls="panel-mat" aria-selected="true">Mat Pilates</button>
+                        <button role="tab" id="tab-reformer" aria-controls="panel-reformer" aria-selected="false" tabindex="-1">Reformer Pilates</button>
+                        <button role="tab" id="tab-private" aria-controls="panel-private" aria-selected="false" tabindex="-1">Private Sessions</button>
+                    </div>
+                    <div class="card tab-panel" role="tabpanel" id="panel-mat" aria-labelledby="tab-mat">
+                        <h3>Mat Pilates</h3>
+                        <p>Mat Pilates uses bodyweight exercises to improve core strength, posture and flexibility.</p>
+                    </div>
+                    <div class="card tab-panel" role="tabpanel" id="panel-reformer" aria-labelledby="tab-reformer" hidden>
+                        <h3>Reformer Pilates</h3>
+                        <p>Reformer Pilates uses a reformer machine to provide resistance during exercises.</p>
+                    </div>
+                    <div class="card tab-panel" role="tabpanel" id="panel-private" aria-labelledby="tab-private" hidden>
+                        <h3>Private Sessions</h3>
+                        <p>Private sessions provide one-on-one coaching based on individual goals.</p>
+                    </div>
+                </div>
             </section>
 
-            <section>
-
-                <h3>Reformer Pilates</h3>
-
-                <p>
-                    Reformer Pilates uses a reformer machine to provide
-                    resistance during exercises.
-                </p>
-
+            <section class="block reveal">
+                <h2>How a Class Works</h2>
+                <ol>
+                    <li><strong>Arrive and Warm Up</strong> &ndash; Clients begin with breathing and mobility exercises.</li>
+                    <li><strong>Guided Movement</strong> &ndash; The instructor guides clients through Pilates exercises.</li>
+                    <li><strong>Cool Down and Stretch</strong> &ndash; The class ends with stretching and relaxation.</li>
+                </ol>
             </section>
 
-            <section>
-
-                <h3>Private Sessions</h3>
-
-                <p>
-                    Private sessions provide one-on-one coaching based on
-                    individual goals.
-                </p>
-
+            <section class="block reveal">
+                <h2>Class Timetable</h2>
+                <p>Search, filter and sort our weekly classes.</p>
+                <div class="toolbar">
+                    <div><label for="class-search">Search classes</label>
+                        <input type="search" id="class-search" placeholder="e.g. beginner, Rosebank, Saturday" autocomplete="off"></div>
+                    <div><label for="class-type">Class type</label>
+                        <select id="class-type">
+                            <option value="all">All types</option>
+                            <option value="mat">Mat Pilates</option>
+                            <option value="reformer">Reformer Pilates</option>
+                            <option value="private">Private Session</option>
+                        </select></div>
+                    <div><label for="class-sort">Sort by</label>
+                        <select id="class-sort">
+                            <option value="day">Day and time</option>
+                            <option value="price-asc">Price: low to high</option>
+                            <option value="price-desc">Price: high to low</option>
+                            <option value="name">Name (A&ndash;Z)</option>
+                        </select></div>
+                </div>
+                <p id="class-count" aria-live="polite"></p>
+                <div class="grid" id="class-list"></div>
             </section>
 
+            <section class="block reveal">
+                <h2>Pricing</h2>
+                <div class="table-wrap">
+                <table>
+                    <caption class="hint">Prices in South African Rand (ZAR)</caption>
+                    <thead><tr><th scope="col">Class Type</th><th scope="col">Single Class</th><th scope="col">10-Class Pack</th></tr></thead>
+                    <tbody>
+                        <tr><td>Mat Pilates</td><td>R180</td><td>R1 500</td></tr>
+                        <tr><td>Reformer Pilates</td><td>R280</td><td>R2 400</td></tr>
+                        <tr><td>Private Session</td><td>R550</td><td>R4 800</td></tr>
+                    </tbody>
+                </table>
+                </div>
+            </section>
+
+            <section class="block reveal">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq1" id="faq1-btn">Do I need experience to join?</button></h3>
+                        <div class="accordion-panel" id="faq1" role="region" aria-labelledby="faq1-btn"><p>No. Our beginner classes teach the basics of breathing and control, and our instructors adapt every exercise to your level.</p></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq2" id="faq2-btn">What should I wear and bring?</button></h3>
+                        <div class="accordion-panel" id="faq2" role="region" aria-labelledby="faq2-btn"><p>Wear comfortable, stretchy clothing. Grip socks are recommended for reformer classes, and a water bottle is always a good idea.</p></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3><button class="accordion-trigger" aria-expanded="false" aria-controls="faq3" id="faq3-btn">How do I book a trial class?</button></h3>
+                        <div class="accordion-panel" id="faq3" role="region" aria-labelledby="faq3-btn"><p>Complete the form on our <a href="enquiries.html">enquiries page</a> and we will confirm your session by email.</p></div>
+                    </div>
+                </div>
+            </section>
         </div>
-
-        <section>
-            <h2>How a Class Works</h2>
-
-            <ol class="steps">
-                <li>
-                    <strong>Arrive and Warm Up</strong>
-                    <p>Clients begin with breathing and mobility exercises.</p>
-                </li>
-
-                <li>
-                    <strong>Guided Movement</strong>
-                    <p>The instructor guides clients through Pilates exercises.</p>
-                </li>
-
-                <li>
-                    <strong>Cool Down and Stretch</strong>
-                    <p>The class ends with stretching and relaxation.</p>
-                </li>
-            </ol>
-
-        </section>
-
-        <section>
-            <h2>Pricing</h2>
-
-            <table border="1">
-
-                <tr>
-                    <th>Class Type</th>
-                    <th>Single Class</th>
-                    <th>10-Class Pack</th>
-                </tr>
-
-                <tr>
-                    <td>Mat Pilates</td>
-                    <td>R180</td>
-                    <td>R1 500</td>
-                </tr>
-
-                <tr>
-                    <td>Reformer Pilates</td>
-                    <td>R280</td>
-                    <td>R2 400</td>
-                </tr>
-
-                <tr>
-                    <td>Private Session</td>
-                    <td>R550</td>
-                    <td>R4 800</td>
-                </tr>
-
-            </table>
-
-        </section>
-
     </main>
 
     <footer class="site-footer">
-        <p>RESET Pilates Studio</p>
-        <p>Rosebank & midrand, Johannesburg</p>
-        <p>&copy; 2026 RESET Pilates Studio</p>
+        <div class="container">
+            <!-- Address of the studio -->
+            <p><strong>RESET Pilates Studio</strong></p>
+            <p>Rosebank &amp; Midrand, Johannesburg</p>
+            <p><a href="enquiries.html">Book a trial class</a> &middot; <a href="contact.html">Contact us</a></p>
+            <p>&copy; 2026 RESET Pilates Studio</p>
+        </div>
     </footer>
-
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>

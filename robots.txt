@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thatombewe733.github.io/WEDE5020_POE/sitemap.xml

@@ -1,112 +1,202 @@
-# RESET Pilates Studio
+# RESET Pilates Studio Website
 
-A responsive, multi-page website for a fictional Pilates studio, built as part of the WEDE5020 (Web Development Introduction) Portfolio of Evidence — Part 2: Designing the Visuals (CSS Styling and Responsive Design).
+## Project Title
+RESET Pilates Studio 
 
-**Live pages:** `index.html` (Home), `about.html`, `services.html`, `enquiries.html`, `contact.html`
+## Student Information
+- **Student Name:** Thato Mbewe
+- **Student Number:** ST10521635
+- **Module:** WEDE5020 – Web Design and Development
 
----
 
 ## Project Overview
+RESET Pilates Studio is a fictional Pilates studio based in Johannesburg, South Africa, operating from two locations: Rosebank and Midrand. This project is a multi-page website built to showcase the studio's classes, pricing, instructors, and contact information, and to allow prospective clients to enquire about classes or book a trial session.
 
-RESET Pilates Studio is a small studio with two Johannesburg locations (Rosebank and Midrand) offering Mat Pilates, Reformer Pilates, and Private Sessions. The site presents the studio's story, class offerings, pricing, and contact/enquiry forms across five linked HTML pages, all styled from a single external stylesheet.
+The website was designed with a calm, minimal aesthetic reflecting the studio's brand values of breath, control, and movement, using a moss green and warm brass colour palette throughout.
 
-## Folder Structure
+The website consists of five HTML pages — Home, About Us, Services, Enquiries, and Contact Us — all linked through a consistent navigation menu, header, and footer. Content was researched and written specifically for a Pilates studio audience, covering class types, pricing, instructor bios, studio history, and multiple contact locations.
 
+## Website Goals and Objectives
+- Provide a clear, easy-to-navigate website that introduces RESET Pilates Studio to potential clients.
+- Present information on class types (Mat Pilates, Reformer Pilates, Private Sessions) along with pricing.
+- Allow visitors to submit enquiries about classes and book trial sessions through an online form.
+- Provide accurate contact information and locations for both studio branches.
+- Build the website using semantic, accessible HTML5 structured across five pages.
+
+**Key Performance Indicators (KPIs):**
+- Number of enquiry form submissions.
+- Time spent on the Services page (indicating engagement with pricing/class info).
+- Click-through rate from homepage to the Enquiries page ("Book a Trial Class" CTA).
+
+## Key Features and Functionality
+
+| Page | Purpose |
+|---|---|
+| `index.html` | Homepage with hero image, introduction, and call to action |
+| `about.html` | Studio history, mission, vision, and instructor profiles |
+| `services.html` | Class types, class process, and pricing table |
+| `enquiries.html` | Enquiry form for booking trial classes |
+| `contact.html` | Studio locations, hours, contact details, and contact form |
+
+**Core functionality:**
+- Consistent navigation menu across all five pages
+- Logo, hero, small, and portrait images placed across the site
+- Enquiry form with class-type selection
+- Contact form for general messages
+- Pricing table for class packages
+- Semantic HTML5 structure (`header`, `nav`, `main`, `section`, `footer`)
+
+**File and Folder Structure**
 ```
-REsETPilateStudio_Part2/
-├── index.html
-├── about.html
-├── services.html
-├── enquiries.html
-├── contact.html
-├── README.md
-├── css_assets/
-│   └── style.css
+RESETPILATESTUDIO/
+│
+├── css/
+│   └── styles.css
 ├── images/
-│   ├── studiologo.png
 │   ├── herophoto.png
+│   ├── largephoto.png
 │   ├── smallphoto.png
-│   └── largephoto.png
-├── screenshots/
-│   ├── mobile-320px.png
-│   ├── tablet-768px.png
-│   └── desktop-1280px.png
-├── js_assets/        (reserved for future JS — currently empty)
-└── private/          (reserved — currently empty)
+│   └── studiologo.png
+├── js/
+│   ├── data.js
+│   └── main.js
+├── about.html
+├── contact.html
+├── enquiries.html
+├── index.html
+├── services.html
+├── robots.txt
+├── sitemap.xml
+└── README.md
 ```
 
-## Technologies Used
+## Timeline and Milestones
 
-- **HTML5** — semantic structure (`header`, `nav`, `main`, `section`, `footer`) across all five pages
-- **CSS3** — a single external stylesheet (`css_assets/style.css`) linked to every page, using:
-  - CSS custom properties (`:root` variables) for a consistent colour palette, typography scale, and spacing scale
-  - Flexbox for the header, navigation, and text/image sections
-  - CSS Grid for the services cards and class-steps layout
-  - Media queries at `768px` and `480px` breakpoints for tablet and mobile
-  - Pseudo-classes (`:hover`, `:focus`, `:active`) on navigation links, buttons, form fields, and table rows
+| Milestone | Status |
+|---|---|
+| Target organisation selected (RESET Pilates Studio) | Complete |
+| Website Project Proposal drafted and submitted | Complete |
+| Content research and sourcing | Complete |
+| Sitemap and file structure created | Complete |
+| HTML files created for all 5 pages | Complete |
+| Images integrated into pages | Complete |
+| Navigation tested across all pages | Complete |
+| README.md compiled | Complete |
+| GitHub repository set up and pushed | Complete |
 
-## Responsive Design Testing
+## Part 1 Details
+This README currently documents Part 1 of the WEDE5020 POE, covering:
+- Website Project Proposal
+- Content research and sourcing
+- Website structure and planning (sitemap, file structure)
+- Initial HTML structure and basic content for all five pages
 
-The site was tested using Chrome DevTools' device toolbar across three representative breakpoints to confirm the layout adapts correctly.
+Part 2 covered styling and layout. Part 3 (below) adds JavaScript functionality, SEO, form validation and deployment.
 
-### Mobile (320px)
-Navigation collapses to a full-width stacked column, and the hero/media sections stack vertically.
+## Part 3 Details
+Part 3 enhances the website with JavaScript, SEO, validated forms and deployment.
 
-![Mobile view at 320px](screenshots/mobile-320px.png)
+**JavaScript enhancements** (`js/main.js`, `js/data.js`)
+- Accordion (FAQ on `services.html`), tabs (class types on `services.html`) and modals (instructor bios on `about.html`), all keyboard accessible.
+- Google Maps embed on `contact.html` with buttons to switch between branches and an "Open in Google Maps" link; studio addresses now use Rosebank Mall (50 Bath Avenue) and Mall of Africa (Waterfall City).
+- Gallery with lightbox (`index.html`, `about.html`) with next/previous buttons, arrow keys and Escape to close.
+- CSS and JavaScript animations: scroll-reveal sections, hover transitions and animated accordion panels (disabled for users who prefer reduced motion).
+- Dynamic content: the class timetable on `services.html` is built from a JavaScript data file with live search, filter by class type and sort by day, price or name.
 
-### Tablet (~768px)
-Navigation switches to a horizontal row; the services grid reduces to two columns.
+**SEO**
+- Unique title tags, meta descriptions and keywords on every page; canonical URLs and Open Graph tags.
+- One H1 per page with H2/H3 headings in order; descriptive alt text and image dimensions; lazy loading below the fold.
+- Clean file names, internal links between pages, mobile-friendly responsive layout.
+- Local SEO: Johannesburg/Rosebank/Midrand keywords and LocalBusiness (schema.org) structured data.
+- `robots.txt` and `sitemap.xml` added.
+- Off-page plan: Google Business Profile for both branches, local directory listings, and Instagram/Facebook promotion linking back to the site.
 
-![Tablet view at ~768px](screenshots/tablet-768px.png)
+**Forms and validation**
+- `enquiries.html`: validated enquiry form (name, email, SA phone number, class, branch, package, date, goals). After validation it is submitted with AJAX (`fetch`) and shows a response with the estimated cost and class availability.
+- `contact.html`: validated contact form with message type; the validated input is compiled into an email addressed to the recipient set in `js/main.js` (`CONTACT_RECIPIENT`) and the client sends it with one click.
+- Inline error messages, character counters, HTML5 attributes plus JavaScript checks, and a honeypot field against spam bots.
 
-### Desktop (1280px)
-Full multi-column layout: horizontal navigation, side-by-side text/image sections, and a three-column services grid.
+**Security and performance**
+- Content-Security-Policy (frame-src limited to Google Maps) and referrer meta tags, and user input is only written to the page with `textContent`.
+- Single shared stylesheet and script files, lazy-loaded images, `font-display: swap`.
 
-![Desktop view at 1280px](screenshots/desktop-1280px.png)
+**Deployment**
+- Hosted on GitHub Pages: https://thatombewe733.github.io/WEDE5020_POE/
 
-**Observations from testing:**
-- Layout, navigation, and typography all adjust smoothly between breakpoints with no horizontal scrolling or overlapping content.
-- Images scale correctly within their containers at every size (`max-width: 100%`).
-- **Follow-up item:** images are currently served as a single fixed-resolution file at every breakpoint. A future iteration should add `srcset`/`sizes` (or `<picture>`) so smaller images are served to mobile devices, reducing load time.
-
----
+## Sitemap
+```
+Home (index.html)
+│
+├── About Us (about.html)
+├── Services (services.html)
+├── Enquiries (enquiries.html)
+└── Contact Us (contact.html)
+```
+All five pages share a common header (logo, title, tagline, navigation) and footer (studio name, locations, copyright).
 
 ## Changelog
 
-All notable changes to this project are documented here, most recent first.
+### [Unreleased]
+- Replace the placeholder contact email and add a live AJAX endpoint (see `js/main.js`)
 
-### [Part 2] — CSS Styling and Responsive Design
-- Added external stylesheet `css_assets/style.css` and linked it from all five HTML pages.
-- Established a base/reset style (`box-sizing: border-box`, margin/padding reset) and a shared colour and typography scale using CSS custom properties.
-- Applied typographic styling (font family, size scale, line height, letter spacing) across headings, body text, and the tagline.
-- Built the desktop layout using Flexbox (header, nav, media sections) and CSS Grid (services cards, class steps).
-- Applied visual/decorative styling: colour palette, background colours, border-radius, and box-shadow on cards, buttons, and the logo.
-- Implemented interactive states with `:hover`, `:focus`, and `:active` pseudo-classes on navigation links, the call-to-action button, form inputs, and pricing table rows.
-- Added responsive design: media queries at 768px (tablet) and 480px (mobile) breakpoints, switching multi-column layouts to single-column and adjusting font sizes and navigation for smaller screens.
-- Used relative units (`rem` for spacing/typography, `%`/`max-width` for images and inputs) to support responsiveness.
-- Tested the site across mobile, tablet, and desktop widths using browser developer tools; added screenshot evidence to this README (see *Responsive Design Testing* above).
+### [2.0.0] - 2026-10-31 (Part 3)
+**Feedback from Part 2 (edit these entries to match your marker's comments)**
+- Fixed broken markup on `about.html`: a paragraph sat outside its `<section>` and closing tags were misplaced; all content is now inside correctly nested sections.
+- Fixed inconsistent capitalisation of "Midrand" (previously "midrand") in the footers and on `contact.html`.
+- Replaced `<table border="1">` with a styled table using `<thead>`, `<tbody>`, a caption and `scope` attributes for accessibility.
+- Replaced the `<br>`-based form layout with labelled `.field` blocks (label, input, hint, error message) styled with CSS.
+- Added `width`/`height` and `loading="lazy"` to images and improved alt text so each describes what the photo shows.
+- Added a skip-to-content link, `aria-current` on the active navigation item and a responsive mobile menu.
 
-### [Part 1 feedback addressed]
-> **TODO:** Add the specific corrections made in response to your Part 1 marker feedback here — e.g. "Fixed heading hierarchy on About page," "Added missing alt text," "Corrected navigation link on Services page," etc. Copy each point of feedback you received and describe the exact change made against it, so the lecturer can see it was actioned.
+**New in Part 3**
+- Added `css/styles.css`: moss green and brass palette, Poppins/Lato fonts, responsive grid layout and focus styles.
+- Added `js/main.js` and `js/data.js` with accordion, tabs, modals, gallery lightbox, scroll animations, Leaflet map, and timetable search/filter/sort.
+- Added `faq` accordion and class-type tabs to `services.html`, and instructor bio modals to `about.html`.
+- Added gallery with lightbox to `index.html` and `about.html`.
+- Added interactive map with both studio locations to `contact.html`.
+- Rebuilt `enquiries.html` form with branch, package and date fields, JavaScript validation, AJAX submission and a response showing cost and availability.
+- Rebuilt `contact.html` form with message type, validation, and a compiled email the client can send to the recipient stated in the code.
+- Added unique titles, meta descriptions, keywords, canonical links, Open Graph tags and LocalBusiness JSON-LD to every page.
+- Added `robots.txt` and `sitemap.xml`.
+- Added Content-Security-Policy, referrer policy and Subresource Integrity on CDN scripts.
+- Updated folder structure: `css_assets`, `js_assets` and `private` replaced by `css` and `js`.
+- Deployed the site to GitHub Pages.
 
-### [Part 1] — Structure and Content (prior submission)
-- Initial five-page HTML structure created: Home, About Us, Services, Enquiries, Contact Us.
-- Semantic HTML markup, navigation, forms, and initial content added prior to CSS styling.
+### [1.1.0] - 2026-08-14
+- Updated studio locations from Rosebank & Bryanston to Rosebank & Midrand, Johannesburg, and corrected addresses across all footers and the Contact page
+- Added descriptive comments across all HTML files (e.g. `<!-- Logo -->`, `<!-- Hero Image -->`, `<!-- Address -->`) to improve code readability
+- Added `smallphoto.png` to the "Why Choose RESET?" section on `index.html`
+- Added `largephoto.png` to the "Our Classes" section on `index.html`
+- Added alt text to logo images that were previously missing descriptions
 
----
+### [1.0.0] - 2026-08-13
+- Fixed inconsistent studio addresses across all footers (previously mismatched between pages)
+- Corrected mismatched location details on `contact.html`
+- Wrapped content blocks on `about.html` in semantic `<section>` tags
+- Replaced incorrect `<pre>` tag with `<p>` for tagline text
+- Fixed missing space in `herophoto.png` image tag on `index.html`
+
+### [0.1.0] - 2026-08-12
+- Initial creation of five HTML pages: `index.html`, `about.html`, `services.html`, `enquiries.html`, `contact.html`
+- Created folder structure (`css_assets`, `images`, `js_assets`, `private`)
+- Added enquiry form to `enquiries.html`
+- Added contact form and studio location details to `contact.html`
+- Added pricing table and class descriptions to `services.html`
+- Added instructor profiles and mission/vision content to `about.html`
 
 ## References
 
-> **TODO:** Replace/expand this list with the actual sources you consulted while building the site (Harvard referencing style, as required by the module). Suggested starting points based on the techniques used in this project:
+Google, 2026. *Google Maps.* [online] Available at: <https://www.google.com/maps> [Accessed 2 November 2026].
 
-- Mozilla Developer Network (MDN). *CSS Flexible Box Layout*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout (Accessed: [date]).
-- Mozilla Developer Network (MDN). *CSS Grid Layout*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout (Accessed: [date]).
-- Mozilla Developer Network (MDN). *Using media queries*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries (Accessed: [date]).
-- Mozilla Developer Network (MDN). *CSS Custom Properties (--*)*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties (Accessed: [date]).
-- W3Schools. *CSS Pseudo-classes*. Available at: https://www.w3schools.com/css/css_pseudo_classes.asp (Accessed: [date]).
+Google, 2026. *Search Central: SEO Starter Guide.* [online] Available at: <https://developers.google.com/search/docs> [Accessed 31 October 2026].
+
+Schema.org, 2026. *Schema.org.* [online] Available at: <https://schema.org> [Accessed 31 October 2026].
+
+Google Fonts, 2026. *Google Fonts.* [online] Available at: <https://fonts.google.com> [Accessed 14 August 2026].
+
+The Independent Institute of Education, 2026. *WEDE5020: Web Design and Development – Module Manual.* Johannesburg: IIE.
+
+Unsplash, 2026. *Unsplash.* [online] Available at: <https://unsplash.com> [Accessed 14 August 2026].
 
 ---
-
-## Author
-
-Thato Mbewe — WEDE5020, The Independent Institute of Education (IIE)
+© RESET Pilates Studio 2026

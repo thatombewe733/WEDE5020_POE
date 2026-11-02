@@ -1,102 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-ZA" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESET Pilates Studio - Enquiries</title>
-    <link rel="stylesheet" href="css_assets/style.css">
+    <title>Book a Trial Class | Enquiries | RESET Pilates Studio</title>
+    <meta name="description" content="Enquire about Pilates classes, pricing and availability at RESET Pilates Studio in Rosebank and Midrand, and book your trial class online.">
+    <meta name="keywords" content="book Pilates trial class, Pilates enquiry Johannesburg, Pilates class availability">
+    <meta name="author" content="Thato Mbewe">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; frame-ancestors 'self'; form-action 'self' mailto:">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="https://thatombewe733.github.io/WEDE5020_POE/enquiries.html">
+    <link rel="icon" type="image/png" href="images/studiologo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RESET Pilates Studio">
+    <meta property="og:title" content="Book a Trial Class | Enquiries | RESET Pilates Studio">
+    <meta property="og:description" content="Enquire about Pilates classes, pricing and availability at RESET Pilates Studio in Rosebank and Midrand, and book your trial class online.">
+    <meta property="og:url" content="https://thatombewe733.github.io/WEDE5020_POE/enquiries.html">
+    <meta property="og:image" content="https://thatombewe733.github.io/WEDE5020_POE/images/herophoto.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;600&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
     <header class="site-header">
-        <!-- Logo -->
-        <img class="logo" src="images/studiologo.png" alt="RESET Pilates Studio Logo">
-
-        <h1>RESET Pilates Studio</h1>
-        <p class="tagline">Breathe. Move. RESET.</p>
-
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="enquiries.html">Enquiries</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-
+        <div class="container header-inner">
+            <!-- Logo and studio name -->
+            <a class="brand" href="index.html" aria-label="RESET Pilates Studio home">
+                <img src="images/studiologo.png" alt="RESET Pilates Studio logo" width="56" height="56">
+                <span><strong>RESET Pilates Studio</strong><small>Breathe. Move. RESET.</small></span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav class="main-nav" id="site-nav" aria-label="Main navigation">
+                <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="enquiries.html" aria-current="page">Enquiries</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main id="main">
+        <div class="page-title"><div class="container">
+            <h1>Book a Trial Class</h1>
+            <p>Complete the form below and we will contact you about your Pilates session.</p>
+        </div></div>
 
-        <section>
-            <h2>Book a Trial Class</h2>
-
-            <p>
-                Complete the form below and we will contact you about
-                your Pilates session.
-            </p>
-
-        </section>
-
-        <section>
-
-            <h2>Enquiry Form</h2>
-
-            <form>
-
-                <label for="name">Full Name:</label>
-                <br>
-                <input type="text" id="name" name="name">
-                <br><br>
-
-                <label for="email">Email Address:</label>
-                <br>
-                <input type="email" id="email" name="email">
-                <br><br>
-
-                <label for="phone">Phone Number:</label>
-                <br>
-                <input type="tel" id="phone" name="phone">
-                <br><br>
-
-                <label for="class">Which class are you interested in?</label>
-                <br>
-
-                <select id="class" name="class">
-
-                    <option value="">Please choose</option>
-                    <option value="mat">Mat Pilates</option>
-                    <option value="reformer">Reformer Pilates</option>
-                    <option value="private">Private Session</option>
-                    <option value="unsure">Not sure yet</option>
-
-                </select>
-
-                <br><br>
-
-                <label for="message">Tell us about your goals:</label>
-                <br>
-
-                <textarea id="message" name="message" rows="5" cols="30"></textarea>
-
-                <br><br>
-
-                <input type="submit" value="Send Enquiry">
-
-            </form>
-
-        </section>
-
+        <div class="container">
+            <section class="block">
+                <div class="card form-card">
+                    <h2>Enquiry Form</h2>
+                    <form id="enquiry-form" novalidate>
+                    <div class="field">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required minlength="2" maxlength="60">
+                        
+                        <p class="error-msg" id="name-error" aria-live="polite"></p>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                        
+                        <p class="error-msg" id="email-error" aria-live="polite"></p>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="082 123 4567">
+                        <span class="hint" id="phone-hint">South African number, e.g. 082 123 4567</span>
+                        <p class="error-msg" id="phone-error" aria-live="polite"></p>
+                    </div>
+                    <div class="field">
+                        <label for="class">Which class are you interested in?</label>
+                        <select id="class" name="class" required>
+                            <option value="">Please choose</option>
+                            <option value="mat">Mat Pilates</option>
+                            <option value="reformer">Reformer Pilates</option>
+                            <option value="private">Private Session</option>
+                            <option value="unsure">Not sure yet</option>
+                        </select>
+                        
+                        <p class="error-msg" id="class-error" aria-live="polite"></p>
+                    </div>
+                    <div class="field">
+                        <label for="branch">Preferred branch</label>
+                        <select id="branch" name="branch" required>
+                            <option value="">Please choose</option>
+                            <option value="rosebank">Rosebank</option>
+                            <option value="midrand">Midrand</option>
+                            <option value="any">No preference</option>
+                        </select>
+                        
+                        <p class="error-msg" id="branch-error" aria-live="polite"></p>
+                    </div>
+                    <div class="field">
+                        <label for="package">Single class or 10-class pack?</label>
+                        <select id="package" name="package" required>
+                            <option value="">Please choose</option>
+                            <option value="single">Single class</option>
+                            <option value="pack10">10-class pack</option>
+                        </select>
+                        
+                        <p class="error-msg" id="package-error" aria-live="polite"></p>
+                    </div>
+                    <div class="field">
+                        <label for="date">Preferred start date</label>
+                        <input type="date" id="date" name="date" required>
+                        <span class="hint" id="date-hint">Monday to Saturday, within the next 90 days</span>
+                        <p class="error-msg" id="date-error" aria-live="polite"></p>
+                    </div>
+                    <div class="field">
+                        <label for="message">Tell us about your goals</label>
+                        <textarea id="message" name="message" rows="5" required minlength="10" maxlength="500"></textarea>
+                        <span class="hint" id="message-hint"><span id="message-count">0 / 500 characters</span></span>
+                        <p class="error-msg" id="message-error" aria-live="polite"></p>
+                    </div>
+                        <div class="hp" aria-hidden="true"><label for="website">Leave this field empty</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
+                        <button class="btn" type="submit" id="enquiry-submit">Send Enquiry</button>
+                    </form>
+                    <div class="form-status" id="enquiry-status" role="status"></div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="site-footer">
-        <!-- Address of the studio -->
-        <p>RESET Pilates Studio</p>
-        <p>Rosebank & midrand, Johannesburg</p>
-        <p>&copy; 2026 RESET Pilates Studio</p>
+        <div class="container">
+            <!-- Address of the studio -->
+            <p><strong>RESET Pilates Studio</strong></p>
+            <p>Rosebank &amp; Midrand, Johannesburg</p>
+            <p><a href="enquiries.html">Book a trial class</a> &middot; <a href="contact.html">Contact us</a></p>
+            <p>&copy; 2026 RESET Pilates Studio</p>
+        </div>
     </footer>
-
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>

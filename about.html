@@ -1,98 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-ZA" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESET Pilates Studio - About Us</title>
-    <link rel="stylesheet" href="css_assets/style.css">
+    <title>About Us | RESET Pilates Studio Johannesburg</title>
+    <meta name="description" content="Learn how RESET Pilates Studio started in 2023, our mission and vision, and meet our certified Pilates instructors in Rosebank and Midrand.">
+    <meta name="keywords" content="about RESET Pilates, Pilates instructors Johannesburg, certified Pilates instructor, Pilates studio story">
+    <meta name="author" content="Thato Mbewe">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; frame-ancestors 'self'; form-action 'self' mailto:">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="canonical" href="https://thatombewe733.github.io/WEDE5020_POE/about.html">
+    <link rel="icon" type="image/png" href="images/studiologo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RESET Pilates Studio">
+    <meta property="og:title" content="About Us | RESET Pilates Studio Johannesburg">
+    <meta property="og:description" content="Learn how RESET Pilates Studio started in 2023, our mission and vision, and meet our certified Pilates instructors in Rosebank and Midrand.">
+    <meta property="og:url" content="https://thatombewe733.github.io/WEDE5020_POE/about.html">
+    <meta property="og:image" content="https://thatombewe733.github.io/WEDE5020_POE/images/herophoto.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;600&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
     <header class="site-header">
-        <!-- Logo -->
-        <img class="logo" src="images/studiologo.png" alt="RESET Studio Logo">
-
-
-        <h1>RESET Pilates Studio</h1>
-        <p class="tagline">Breathe. Move. RESET.</p>
-
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="enquiries.html">Enquiries</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-
+        <div class="container header-inner">
+            <!-- Logo and studio name -->
+            <a class="brand" href="index.html" aria-label="RESET Pilates Studio home">
+                <img src="images/studiologo.png" alt="RESET Pilates Studio logo" width="56" height="56">
+                <span><strong>RESET Pilates Studio</strong><small>Breathe. Move. RESET.</small></span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav class="main-nav" id="site-nav" aria-label="Main navigation">
+                <ul><li><a href="index.html">Home</a></li><li><a href="about.html" aria-current="page">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="enquiries.html">Enquiries</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main id="main">
+        <div class="page-title"><div class="container">
+            <h1>About RESET Pilates Studio</h1>
+            <p>A welcoming space for beginners and experienced clients.</p>
+        </div></div>
 
-        <section>
-            <h2>Our Story</h2>
+        <div class="container">
+            <!-- How the studio started -->
+            <section class="block reveal">
+                <h2>Our Story</h2>
+                <p>RESET Pilates Studio started in 2023 as a small studio with a few mats. The founder wanted to create a welcoming space where beginners and experienced clients could enjoy Pilates.</p>
+                <p>Today, RESET Pilates Studio offers mat and reformer classes across two Johannesburg locations with a team of qualified instructors.</p>
+            </section>
 
-            <p>
-                RESET Pilates Studio started in 2023 as a small studio
-                with a few mats. The founder wanted to create a welcoming
-                space where beginners and experienced clients could enjoy
-                Pilates.
-            </p>
+            <section class="block grid reveal">
+                <div class="card">
+                    <h2>Our Mission</h2>
+                    <p>Our mission is to help clients build strength, flexibility and confidence through Pilates in a welcoming environment.</p>
+                </div>
+                <div class="card">
+                    <h2>Our Vision</h2>
+                    <p>Our vision is to become a leading Pilates studio known for personal attention and quality Pilates training in Gauteng.</p>
+                </div>
+            </section>
 
-            <p>
-                Today, RESET Pilates Studio offers mat and reformer classes
-                across two Johannesburg locations with a team of qualified
-                instructors.
-            </p>
-        </section>
+            <!-- Founder and instructor -->
+            <section class="block reveal">
+                <h2>Meet Our Instructors</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>Thato Mbewe</h3>
+                        <p><strong>Founder and Lead Instructor</strong></p>
+                        <p>Thato is a certified Pilates instructor who specialises in mat and reformer Pilates.</p>
+                        <button class="btn btn-secondary" type="button" data-modal-open="bio-thato">Read full bio</button>
+                    </article>
+                    <article class="card">
+                        <h3>Kutloano Sono</h3>
+                        <p><strong>Instructor</strong></p>
+                        <p>Kutloano focuses on beginner-friendly classes and personalised Pilates sessions.</p>
+                        <button class="btn btn-secondary" type="button" data-modal-open="bio-kutloano">Read full bio</button>
+                    </article>
+                </div>
+            </section>
 
-        <section>
-            <h2>Our Mission</h2>
-
-            <p>
-                Our mission is to help clients build strength, flexibility
-                and confidence through Pilates in a welcoming environment.
-            </p>
-        </section>
-
-        <section>
-            <h2>Our Vision</h2>
-
-            <p>
-                Our vision is to become a leading Pilates studio known for
-                personal attention and quality Pilates training in Gauteng.
-            </p>
-        </section>
-
-        <section>
-            <!-- Introducing the founder and the instructor -->
-            <h2>Meet Our Instructors</h2>
-
-            <h3>Thato Mbewe</h3>
-            <p>Founder and Lead Instructor</p>
-            <p>
-                Thato is a certified Pilates instructor who specialises
-                in mat and reformer Pilates.
-            </p>
-
-            <h3>Kutloano Sono</h3>
-            <p>Instructor</p>
-            <p>
-                Kutloano focuses on beginner-friendly classes and personalised
-                Pilates sessions.
-            </p>
-        </section>
-
+            <section class="block reveal">
+                <h2>Take a Look Around</h2>
+                <div class="gallery" data-gallery></div>
+            </section>
+        </div>
     </main>
 
+    <!-- Instructor bio modals -->
+    <div class="modal" id="bio-thato" role="dialog" aria-modal="true" aria-labelledby="bio-thato-title">
+        <div class="modal-box">
+            <button class="modal-close" type="button" aria-label="Close">&times;</button>
+            <h2 id="bio-thato-title">Thato Mbewe</h2>
+            <p>Founder and Lead Instructor. Thato began teaching in a small rented room and grew RESET through word-of-mouth referrals. She specialises in mat and reformer Pilates, with a focus on low-impact strength and mobility for people recovering from injury.</p>
+        </div>
+    </div>
+    <div class="modal" id="bio-kutloano" role="dialog" aria-modal="true" aria-labelledby="bio-kutloano-title">
+        <div class="modal-box">
+            <button class="modal-close" type="button" aria-label="Close">&times;</button>
+            <h2 id="bio-kutloano-title">Kutloano Sono</h2>
+            <p>Instructor. Kutloano leads our beginner-friendly classes and one-on-one sessions, helping new clients learn the fundamentals of breathing and control with confidence.</p>
+        </div>
+    </div>
+
+    <!-- Lightbox for the photo gallery -->
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+        <button class="lb-btn lb-close" type="button" aria-label="Close photo">&times;</button>
+        <button class="lb-btn lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+        <img src="images/herophoto.png" alt="">
+        <p></p>
+        <button class="lb-btn lb-next" type="button" aria-label="Next photo">&#8250;</button>
+    </div>
+
     <footer class="site-footer">
-        <!-- Address -->
-        <p>RESET Pilates Studio</p>
-        <p>Rosebank & midrand, Johannesburg</p>
-        <p>&copy; 2026 RESET Pilates Studio</p>
+        <div class="container">
+            <!-- Address of the studio -->
+            <p><strong>RESET Pilates Studio</strong></p>
+            <p>Rosebank &amp; Midrand, Johannesburg</p>
+            <p><a href="enquiries.html">Book a trial class</a> &middot; <a href="contact.html">Contact us</a></p>
+            <p>&copy; 2026 RESET Pilates Studio</p>
+        </div>
     </footer>
-
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
